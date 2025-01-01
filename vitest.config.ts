@@ -10,7 +10,7 @@ export default defineConfig({
         ".next/**",
         "node_modules/**",
         "**/*.stories.{js,jsx,ts,tsx}",
-        "src/app/**",
+        "**/*.test.{js,jsx,ts,tsx}",
       ],
       thresholds: {
         lines: 100,
