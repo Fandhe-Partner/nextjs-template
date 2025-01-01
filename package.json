@@ -17,7 +17,7 @@
     "biome": "biome check .",
     "biome:fix": "biome format .",
     "stylelint": "stylelint \"**/*.scss\"",
-    "test": "vitest",
+    "test": "vitest --coverage.enabled true",
     "storybook": "storybook dev -p 6006 --host 0.0.0.0",
     "build-storybook": "storybook build",
     "prepare": "husky"
