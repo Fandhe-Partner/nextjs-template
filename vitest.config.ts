@@ -5,11 +5,12 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       all: true,
+      include: ["src/**"],
+      exclude: [".next/**", "node_modules/**", "**/*.stories.{js,jsx,ts,tsx}"],
       lines: 100,
       functions: 100,
       branches: 100,
       statements: 100,
-      exclude: [".next/**", "node_modules/**"],
       reporter: ["text", "json-summary", "json"],
       reportOnFailure: true,
     },
