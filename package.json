@@ -19,7 +19,8 @@
     "stylelint": "stylelint \"**/*.scss\"",
     "test": "vitest --coverage.enabled true",
     "prepare": "husky",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "15.1.3",
