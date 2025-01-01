@@ -1,10 +1,12 @@
-import { afterEach, expect } from "vitest";
-import "@testing-library/jest-dom";
-import matchers from "@testing-library/jest-dom/matchers";
 import { cleanup } from "@testing-library/react";
+import { afterEach, type expect } from "vitest";
+import "@testing-library/jest-dom";
+import type { TestingLibraryMatchers } from "@testing-library/jest-dom/matchers";
 
-// Extend Vitest's expect with jest-dom matchers
-expect.extend(matchers);
+declare module "vitest" {
+  interface Assertion
+    extends TestingLibraryMatchers<typeof expect.stringContaining, unknown> {}
+}
 
 // Cleanup after each test
 afterEach(() => {

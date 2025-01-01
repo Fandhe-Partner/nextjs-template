@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import React from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { Button } from "./index";
+import styles from "./index.module.scss";
 
 describe("Button", () => {
   let user: ReturnType<typeof userEvent.setup>;
@@ -19,22 +20,22 @@ describe("Button", () => {
   it("applies primary variant by default", () => {
     render(<Button>Default Button</Button>);
     const button = screen.getByText("Default Button");
-    expect(button).toHaveClass("button");
-    expect(button).toHaveClass("primary");
+    expect(button).toHaveClass(styles.button);
+    expect(button).toHaveClass(styles.primary);
   });
 
   it("applies correct variant class", () => {
     render(<Button variant="secondary">Secondary Button</Button>);
     const button = screen.getByText("Secondary Button");
-    expect(button).toHaveClass("button");
-    expect(button).toHaveClass("secondary");
+    expect(button).toHaveClass(styles.button);
+    expect(button).toHaveClass(styles.secondary);
   });
 
   it("merges additional className", () => {
     render(<Button className="custom-class">Custom Button</Button>);
     const button = screen.getByText("Custom Button");
-    expect(button).toHaveClass("button");
-    expect(button).toHaveClass("primary");
+    expect(button).toHaveClass(styles.button);
+    expect(button).toHaveClass(styles.primary);
     expect(button).toHaveClass("custom-class");
   });
 
@@ -66,7 +67,7 @@ describe("Button", () => {
   it("renders outline variant correctly", () => {
     render(<Button variant="outline">Outline Button</Button>);
     const button = screen.getByText("Outline Button");
-    expect(button).toHaveClass("button");
-    expect(button).toHaveClass("outline");
+    expect(button).toHaveClass(styles.button);
+    expect(button).toHaveClass(styles.outline);
   });
 });
