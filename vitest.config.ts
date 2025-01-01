@@ -10,6 +10,8 @@ export default defineConfig({
       branches: 100,
       statements: 100,
       exclude: [".next/**", "node_modules/**"],
+      reporter: ["text", "json-summary", "json"],
+      reportOnFailure: true,
     },
     environment: "happy-dom",
     exclude: [".next/**", "node_modules/**"],
