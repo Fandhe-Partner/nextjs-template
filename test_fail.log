@@ -1,0 +1,101 @@
+test	Test	2025-01-01T07:20:57.2070504Z ##[group]Run npm run test
+test	Test	2025-01-01T07:20:57.2071028Z [36;1mnpm run test[0m
+test	Test	2025-01-01T07:20:57.2131056Z shell: /usr/bin/bash -e {0}
+test	Test	2025-01-01T07:20:57.2131506Z ##[endgroup]
+test	Test	2025-01-01T07:20:57.3291326Z 
+test	Test	2025-01-01T07:20:57.3292679Z > nextjs-template@0.1.0 test
+test	Test	2025-01-01T07:20:57.3293754Z > vitest --coverage.enabled true
+test	Test	2025-01-01T07:20:57.3294108Z 
+test	Test	2025-01-01T07:20:57.6367956Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+test	Test	2025-01-01T07:20:57.7603042Z 
+test	Test	2025-01-01T07:20:57.7605517Z [1m[7m[36m RUN [39m[27m[22m [36mv2.1.8 [39m[90m/home/runner/work/nextjs-template/nextjs-template[39m
+test	Test	2025-01-01T07:20:57.7607542Z       [2mCoverage enabled with [22m[33mv8[39m
+test	Test	2025-01-01T07:20:57.7608364Z 
+test	Test	2025-01-01T07:20:58.7320729Z DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+test	Test	2025-01-01T07:20:58.7321941Z 
+test	Test	2025-01-01T07:20:58.7323537Z More info: https://sass-lang.com/d/legacy-js-api
+test	Test	2025-01-01T07:20:58.7324552Z 
+test	Test	2025-01-01T07:20:58.8945729Z  [32m✓[39m src/components/button/index.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[90m 58[2mms[22m[39m
+test	Test	2025-01-01T07:20:59.5311178Z DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+test	Test	2025-01-01T07:20:59.5319369Z 
+test	Test	2025-01-01T07:20:59.5320006Z More info: https://sass-lang.com/d/legacy-js-api
+test	Test	2025-01-01T07:20:59.5320454Z 
+test	Test	2025-01-01T07:20:59.5924900Z  [31m❯[39m src/app/layout.test.tsx [2m([22m[2m3 tests[22m[2m | [22m[31m2 failed[39m[2m)[22m[90m 23[2mms[22m[39m
+test	Test	2025-01-01T07:20:59.5928095Z [31m   [31m×[31m RootLayout[2m > [22mrenders children within HTML & BODY elements with correct attributes[90m 19[2mms[22m[31m[39m
+test	Test	2025-01-01T07:20:59.5930133Z [31m     → React is not defined[39m
+test	Test	2025-01-01T07:20:59.5931423Z [31m   [31m×[31m RootLayout[2m > [22mapplies font variables correctly[90m 1[2mms[22m[31m[39m
+test	Test	2025-01-01T07:20:59.5932636Z [31m     → React is not defined[39m
+test	Test	2025-01-01T07:20:59.7789543Z 
+test	Test	2025-01-01T07:20:59.7802087Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 2 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+test	Test	2025-01-01T07:20:59.7802696Z 
+test	Test	2025-01-01T07:20:59.7811487Z [31m[1m[7m FAIL [27m[22m[39m src/app/layout.test.tsx[2m > [22mRootLayout[2m > [22mrenders children within HTML & BODY elements with correct attributes
+test	Test	2025-01-01T07:20:59.7817982Z [31m[1m[7m FAIL [27m[22m[39m src/app/layout.test.tsx[2m > [22mRootLayout[2m > [22mapplies font variables correctly
+test	Test	2025-01-01T07:20:59.7853346Z [31m[1mReferenceError[22m: React is not defined[39m
+test	Test	2025-01-01T07:20:59.7860385Z [36m [2m❯[22m RootLayout src/app/layout.tsx:[2m26:3[22m[39m
+test	Test	2025-01-01T07:20:59.8108804Z     [90m 24| [39m  children[33m:[39m [33mReact[39m[33m.[39m[33mReactNode[39m[33m;[39m
+test	Test	2025-01-01T07:20:59.8110371Z     [90m 25| [39m}[33m>[39m) {
+test	Test	2025-01-01T07:20:59.8111552Z     [90m 26| [39m  [35mreturn[39m (
+test	Test	2025-01-01T07:20:59.8123910Z     [90m   | [39m  [31m^[39m
+test	Test	2025-01-01T07:20:59.8125216Z [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m1 passed[39m[22m[90m (2)[39m
+test	Test	2025-01-01T07:20:59.8127610Z     [90m 27| [39m    [33m<[39m[33mhtml[39m [33mlang[39m[33m=[39m[32m"en"[39m[33m>[39m
+test	Test	2025-01-01T07:20:59.8129830Z     [90m 28| [39m      [33m<[39m[33mbody[39m [33mclassName[39m[33m=[39m[33m{[39m[32m`[39m[36m${[39mgeistSans[33m.[39mvariable[36m}[39m[32m [39m[36m${[39mgeistMono[33m.[39mvariable[36m}[39m[32m`[39m[33m}[39m[33m>[39m
+test	Test	2025-01-01T07:20:59.8132188Z [90m [2m❯[22m Object.react-stack-bottom-frame node_modules/react-dom/cjs/react-dom-client.development.js:[2m22428:20[22m[39m
+test	Test	2025-01-01T07:20:59.8134277Z [90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:[2m5757:22[22m[39m
+test	Test	2025-01-01T07:20:59.8136450Z [90m [2m❯[22m updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:[2m8018:19[22m[39m
+test	Test	2025-01-01T07:20:59.8138442Z [90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom-client.development.js:[2m9683:18[22m[39m
+test	Test	2025-01-01T07:20:59.8140970Z [90m [2m❯[22m runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:[2m543:16[22m[39m
+test	Test	2025-01-01T07:20:59.8143038Z [90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:[2m15052:22[22m[39m
+test	Test	2025-01-01T07:20:59.8144998Z [90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:[2m14870:41[22m[39m
+test	Test	2025-01-01T07:20:59.8146876Z [90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:[2m14850:11[22m[39m
+test	Test	2025-01-01T07:20:59.8149142Z [90m [2m❯[22m performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:[2m14384:44[22m[39m
+test	Test	2025-01-01T07:20:59.8150059Z 
+test	Test	2025-01-01T07:20:59.8150618Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+test	Test	2025-01-01T07:20:59.8151072Z 
+test	Test	2025-01-01T07:20:59.8168249Z [2m      Tests [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m8 passed[39m[22m[90m (10)[39m
+test	Test	2025-01-01T07:20:59.8169358Z [2m   Start at [22m 07:20:57
+test	Test	2025-01-01T07:20:59.8170743Z [2m   Duration [22m 2.02s[2m (transform 356ms, setup 302ms, collect 408ms, tests 81ms, environment 583ms, prepare 147ms)[22m
+test	Test	2025-01-01T07:20:59.8177209Z 
+test	Test	2025-01-01T07:20:59.8177246Z 
+test	Test	2025-01-01T07:20:59.8222895Z ##[error]ReferenceError: React is not defined
+test	Test	 ❯ RootLayout src/app/layout.tsx:26:3
+test	Test	 ❯ Object.react-stack-bottom-frame node_modules/react-dom/cjs/react-dom-client.development.js:22428:20
+test	Test	 ❯ renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:5757:22
+test	Test	 ❯ updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:8018:19
+test	Test	 ❯ beginWork node_modules/react-dom/cjs/react-dom-client.development.js:9683:18
+test	Test	 ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:543:16
+test	Test	 ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:15052:22
+test	Test	 ❯ workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:14870:41
+test	Test	 ❯ renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:14850:11
+test	Test	 ❯ performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:14384:44
+test	Test	
+test	Test	
+test	Test	2025-01-01T07:20:59.8329493Z ERROR: Coverage for lines (32.23%) does not meet global threshold (100%)
+test	Test	2025-01-01T07:20:59.8330605Z ERROR: Coverage for functions (66.66%) does not meet global threshold (100%)
+test	Test	2025-01-01T07:20:59.8331786Z ERROR: Coverage for statements (32.23%) does not meet global threshold (100%)
+test	Test	2025-01-01T07:20:59.8332860Z ERROR: Coverage for branches (66.66%) does not meet global threshold (100%)
+test	Test	2025-01-01T07:20:59.8333347Z 
+test	Test	2025-01-01T07:20:59.8345000Z ##[error]ReferenceError: React is not defined
+test	Test	 ❯ RootLayout src/app/layout.tsx:26:3
+test	Test	 ❯ Object.react-stack-bottom-frame node_modules/react-dom/cjs/react-dom-client.development.js:22428:20
+test	Test	 ❯ renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:5757:22
+test	Test	 ❯ updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:8018:19
+test	Test	 ❯ beginWork node_modules/react-dom/cjs/react-dom-client.development.js:9683:18
+test	Test	 ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:543:16
+test	Test	 ❯ performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:15052:22
+test	Test	 ❯ workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:14870:41
+test	Test	 ❯ renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:14850:11
+test	Test	 ❯ performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:14384:44
+test	Test	
+test	Test	
+test	Test	2025-01-01T07:20:59.8352030Z [34m % [39m[2mCoverage report from [22m[33mv8[39m
+test	Test	2025-01-01T07:20:59.8353029Z -------------------|---------|----------|---------|---------|-------------------
+test	Test	2025-01-01T07:20:59.8354300Z File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+test	Test	2025-01-01T07:20:59.8355548Z -------------------|---------|----------|---------|---------|-------------------
+test	Test	2025-01-01T07:20:59.8356622Z All files          |   32.23 |    66.66 |   66.66 |   32.23 |                   
+test	Test	2025-01-01T07:20:59.8357870Z  app               |   22.64 |       50 |      50 |   22.64 |                   
+test	Test	2025-01-01T07:20:59.8358799Z   layout.tsx       |     100 |      100 |     100 |     100 |                   
+test	Test	2025-01-01T07:20:59.8359712Z   page.tsx         |       0 |        0 |       0 |       0 | 1-96              
+test	Test	2025-01-01T07:20:59.8360648Z  components/button |     100 |      100 |     100 |     100 |                   
+test	Test	2025-01-01T07:20:59.8361665Z   index.tsx        |     100 |      100 |     100 |     100 |                   
+test	Test	2025-01-01T07:20:59.8362688Z -------------------|---------|----------|---------|---------|-------------------
+test	Test	2025-01-01T07:20:59.8588072Z ##[error]Process completed with exit code 1.

@@ -22,6 +22,9 @@ describe("RootLayout", () => {
   });
 
   it("renders children within HTML & BODY elements with correct attributes", () => {
+    // Mock document elements before rendering
+    document.documentElement.lang = "";
+    document.body.className = "";
     render(
       <RootLayout>
         <div data-testid="child-content">Hello Layout</div>
@@ -32,15 +35,15 @@ describe("RootLayout", () => {
     const childContent = screen.getByTestId("child-content");
     expect(childContent).toBeInTheDocument();
 
-    // Verify HTML lang attribute
-    const html = document.documentElement;
-    expect(html).toHaveAttribute("lang", "en");
+    // Verify HTML attributes
+    expect(document.documentElement.lang).toBe("en");
 
-    // Verify body has correct font classes
-    const body = document.body;
-    const bodyClasses = body.className;
-    expect(bodyClasses).toContain("--font-geist-sans");
-    expect(bodyClasses).toContain("--font-geist-mono");
+    // Verify content
+    expect(screen.getByText("Hello Layout")).toBeInTheDocument();
+
+    // Verify font classes are applied to body
+    expect(document.body.className).toContain("--font-geist-sans");
+    expect(document.body.className).toContain("--font-geist-mono");
   });
 
   it("applies font variables correctly", () => {
