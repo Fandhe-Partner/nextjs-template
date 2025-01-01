@@ -1,5 +1,5 @@
 import React, { type ButtonHTMLAttributes } from "react";
-import styles from "../../styles/components/button.module.scss";
+import styles from "./index.module.scss";
 
 export type ButtonVariant = "primary" | "secondary" | "outline";
 
