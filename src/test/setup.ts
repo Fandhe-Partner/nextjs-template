@@ -9,7 +9,7 @@ vi.mock("react", async () => {
   const actual = await vi.importActual("react");
   return {
     ...actual,
-    default: actual,
+    default: { ...actual, createElement: actual.createElement },
   };
 });
 

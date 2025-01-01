@@ -17,7 +17,19 @@ const config: StorybookConfig = {
     if (config.module?.rules) {
       config.module.rules.push({
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                auto: true,
+                localIdentName: "[name]__[local]--[hash:base64:5]",
+              },
+            },
+          },
+          "sass-loader",
+        ],
         include: path.resolve(__dirname, "../"),
       });
     }
