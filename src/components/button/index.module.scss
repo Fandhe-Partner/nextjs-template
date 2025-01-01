@@ -1,0 +1,43 @@
+$button-padding: 0.5rem 1rem;
+$button-border-radius: 0.25rem;
+$button-transition: all 0.2s ease-in-out;
+
+.button {
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: $button-transition;
+  
+  &:hover {
+    opacity: 0.9;
+  }
+  
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.primary {
+  background-color: var(--primary-color, #0070f3);
+  color: white;
+}
+
+.secondary {
+  background-color: var(--secondary-color, #666);
+  color: white;
+}
+
+.outline {
+  background-color: transparent;
+  border: 1px solid var(--primary-color, #0070f3);
+  color: var(--primary-color, #0070f3);
+  
+  &:hover {
+    background-color: var(--primary-color, #0070f3);
+    color: white;
+  }
+}
