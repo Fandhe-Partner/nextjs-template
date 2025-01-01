@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": [".next/", "coverage/**"]
+    "ignore": [".next/", "coverage/**", "storybook-static"]
   },
   "formatter": {
     "enabled": true,
