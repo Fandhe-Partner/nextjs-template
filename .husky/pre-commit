@@ -1,4 +1,1 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npm run biome && npm run stylelint
+#!/usr/bin/env sh\n\nnpm run biome

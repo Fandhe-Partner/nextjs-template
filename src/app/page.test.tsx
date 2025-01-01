@@ -85,14 +85,18 @@ describe("Home", () => {
     expect(globeIcon).toHaveAttribute("aria-hidden", "true");
   });
 
-  it("applies correct CSS classes", () => {
-    const { container } = render(<Home />);
-    expect(container.querySelector(".page")).toBeInTheDocument();
-    expect(container.querySelector(".main")).toBeInTheDocument();
-    expect(container.querySelector(".logo")).toBeInTheDocument();
-    expect(container.querySelector(".ctas")).toBeInTheDocument();
-    expect(container.querySelector(".primary")).toBeInTheDocument();
-    expect(container.querySelector(".secondary")).toBeInTheDocument();
-    expect(container.querySelector(".footer")).toBeInTheDocument();
+  it("renders the page structure correctly", () => {
+    render(<Home />);
+    expect(screen.getByTestId("home-page")).toBeInTheDocument();
+    expect(screen.getByTestId("main-content")).toBeInTheDocument();
+    expect(screen.getByTestId("next-logo")).toBeInTheDocument();
+    expect(screen.getByTestId("instructions")).toBeInTheDocument();
+    expect(screen.getByTestId("cta-buttons")).toBeInTheDocument();
+    expect(screen.getByTestId("deploy-button")).toBeInTheDocument();
+    expect(screen.getByTestId("docs-button")).toBeInTheDocument();
+    expect(screen.getByTestId("footer")).toBeInTheDocument();
+    expect(screen.getByTestId("learn-link")).toBeInTheDocument();
+    expect(screen.getByTestId("examples-link")).toBeInTheDocument();
+    expect(screen.getByTestId("nextjs-link")).toBeInTheDocument();
   });
 });
