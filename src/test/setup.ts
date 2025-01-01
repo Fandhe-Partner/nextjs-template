@@ -33,7 +33,7 @@ vi.mock("next/image", () => ({
       alt,
       width,
       height,
-      ...(priority ? { priority: "true" } : {}),
+      ...(priority ? { priority: "" } : {}),
       ...props,
     });
   },

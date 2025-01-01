@@ -11,7 +11,7 @@ describe("Home", () => {
     expect(logo).toBeInTheDocument();
     expect(logo).toHaveAttribute("width", "180");
     expect(logo).toHaveAttribute("height", "38");
-    expect(logo).toHaveAttribute("priority", "true");
+    expect(logo).toHaveAttribute("priority", "");
   });
 
   it("renders the getting started instructions", () => {
